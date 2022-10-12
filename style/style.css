@@ -17,15 +17,7 @@ main {
     background: #8ebd2b;
 }
 
-.onOff {
-    display: inline;
-    float: left;
-    padding: 5px;
-    margin-left: auto;
-    margin-right: 0;
-    font-size: 15px;
 
-}
 
 .outputScreen {
     text-align: right;
