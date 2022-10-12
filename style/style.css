@@ -1,41 +1,64 @@
-* {
-    padding: 0;
+body{
     margin: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.lesindesradios.fr/radios/forum/importrk/news/original/59a50d5cca6c93.35075581.jpeg);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-body {
-  max-width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-.calculatrice {
-    background-color: aquamarine;
+main {
     display: flex;
     flex-direction: column;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    background: #8ebd2b;
 }
 
-.ecran {
-    width: 18%;
-    height: 100px;
-    background-color: palevioletred;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+.onOff {
+    display: inline;
+    float: left;
     padding: 5px;
-    font-size: 30px;
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 15px;
+
 }
 
-.touches {
-    display: grid;
-    grid-template-columns: repeat(4, 50px);
-    grid-template-rows: repeat(5, 50);
-    grid-gap: 7px;
+.outputScreen {
+    text-align: right;
+    margin: 0;
+    padding: 2rem;
+    background: rgb(241, 231, 229);
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.AC {
+    background-color:#2bbd5a;
+}
+div {
+    display: flex;
+}
+
+button {
+    width: 4rem;
+    height: 3rem;
+    background: white;
+    border: 1px solid grey;
+    margin: 3px 3px 0px 3px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.equal {
+    flex: auto;
+    background-color:#2bbd5a;
+}
+
+button:active {
+    box-shadow: 0 1px blueviolet;
+    transform: translate(3px);
 }

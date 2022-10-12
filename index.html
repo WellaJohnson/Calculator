@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <title>Calculatrice</title>
-</head>
-<body>
-    
-    <div class="calculatrice"></div>
-        <div class="ecran"></div>
-        <div class="touches">
-            <button class="bouton">AC</button>
-            <button class="bouton">(</button>
-            <button class="bouton">)</button>
-            <button class="bouton">/</button>
-            <button class="bouton">7</button>
-            <button class="bouton">8</button>
-            <button class="bouton">9</button>
-            <button class="bouton">*</button>
-            <button class="bouton">4</button>
-            <button class="bouton">5</button>
-            <button class="bouton">6</button>
-            <button class="bouton">-</button>
-            <button class="bouton">1</button>
-            <button class="bouton">2</button>
-            <button class="bouton">3</button>
-            <button class="bouton">+</button>
-            <button class="bouton">0</button>
-            <button class="bouton">.</button>
-            <button class="bouton">=</button>
-        </div>
+  <head>
+    <!-- Strucure by default for Exercice Sirius Calculator -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <main>
+        <div class="OnOff">
+            <button class="bouton">On/Off</button>
 
-</body>
-<script src="./scripts/script.js"></script>
+        </div>
+      <p class="outputScreen">0</p>
+      <div>
+        <button class="AC">AC</button>
+        <button>(</button>
+        <button>)</button>
+        <button>&divide;</button>
+      </div>
+      <div>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>&times;</button>
+      </div>
+      <div>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>+</button>
+      </div>
+      <div>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>-</button>
+      </div>
+      <div>
+        <button>0</button>
+        <button>.</button>
+        <button class="equal">=</button>
+      </div>
+    </main>
+  </body>
+  <script src="./scripts/script.js"></script>
 </html>
