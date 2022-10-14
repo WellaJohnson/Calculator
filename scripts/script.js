@@ -36,21 +36,39 @@
 // const btns = document.getElementById("plus");
 // console.log(btns.textContent);
 
-let btns = Array.from(document.querySelectorAll("button"));
-console.log(btns);
+// let btns = Array.from(document.querySelectorAll("button"));
+// console.log(btns);
 
 
-btns.forEach(btn => console.log(btn));
+// btns.forEach(btn => console.log(btn));
 
-const display = document.querySelector(".outputScreen");
+// const display = document.querySelector(".outputScreen");
 
-function bonjour(params) { display.textContent = "Hello"
+// function bonjour(params) { display.textContent = "Hello"
     
-}
+// }
 
-btns.addEventListener("click", bonjour);
+// btns.addEventListener("click", bonjour);
 
+const outputScreen = document.getElementById('outputScreen');
 
+const buttons = Array.from(document.querySelectorAll('button'));
 
+buttons.map(button => button.addEventListener('click', (e)=>{
+    switch (e.target.innerText) {
+        case 'AC':
+                outputScreen.innerText = '';
+             break;
+         case '=':
+             try{
+                outputScreen.innerText = eval(outputScreen.innerText);
+             } catch{
+                outputScreen.innerText = 'Error!'
+             }
+             break;
+         default:
+                outputScreen.innerText += e.target.innerText
+             break;
+}}));
 
 

@@ -1,56 +1,88 @@
 body{
-    margin: 0;
+    /* margin: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(https://images.lesindesradios.fr/radios/forum/importrk/news/original/59a50d5cca6c93.35075581.jpeg);
+    background: url("https://static.vecteezy.com/system/resources/previews/005/964/667/original/welcome-back-to-school-background-template-school-supplies-on-white-background-vector.jpg") no-repeat;
+    background-size: cover;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+
 }
 
 main {
     display: flex;
     flex-direction: column;
     border: 1px solid black;
-    padding: 10px;
-    border-radius: 5px;
-    background: #8ebd2b;
+    padding: 12px;
+    border-radius: 20px;
+    background: rgb(0, 0, 0);
+    box-shadow: 10px 10px 5px rgb(50, 49, 49);
+
 }
 
 
 
-.outputScreen {
-    text-align: right;
+#outputScreen {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
     margin: 0;
-    padding: 2rem;
-    background: rgb(241, 231, 229);
+    padding-right: 2px;
+    height: 8rem;
+    background: rgb(231, 226, 225);
     border: 1px solid grey;
     border-radius: 5px;
 }
 
 .AC {
-    background-color:#2bbd5a;
+    background-color: black;
+    color: yellow;
+    font-weight: bolder;
+    
 }
 div {
     display: flex;
 }
 
+
+.operations {
+    color:#d81710;
+    background-color: black;
+    font-weight: bolder;
+}
+
+.nombres {
+    color: white;
+    background-color: black;
+}
+
 button {
-    width: 4rem;
-    height: 3rem;
+    width: 5rem;
+    height: 4rem;
     background: white;
     border: 1px solid grey;
     margin: 3px 3px 0px 3px;
     border-radius: 5px;
     font-size: 18px;
+    
+}
+
+.container{
+    cursor: grab
 }
 
 .equal {
     flex: auto;
-    background-color:#2bbd5a;
+    background-color:#d81710;
+    color: white;
+    font-weight: bolder;
 }
 
 button:active {
-    box-shadow: 0 1px blueviolet;
-    transform: translate(3px);
+    box-shadow: 0 1px rgb(98, 38, 154);
+    transform: translate(4px);
 }
