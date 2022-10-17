@@ -63,11 +63,11 @@ buttons.map(button => button.addEventListener('click', (e)=>{
              try{
                 outputScreen.innerText = eval(outputScreen.innerText);
              } catch{
-                outputScreen.innerText = 'Error!'
+                outputScreen.innerText = 'Error!';
              }
              break;
          default:
-                outputScreen.innerText += e.target.innerText
+                outputScreen.innerText += e.target.innerText;
              break;
 }}));
 
